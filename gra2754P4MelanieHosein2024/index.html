@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sprout and Soil | Melanie Hosein 2024</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script type="text/javascript">
+  $(document).ready(
+    function() {
+      $('#icon').click (
+        function() {
+          $('#nav').show();
+          $('#icon').hide();
+          $('#x_icon').show();
+        }
+  );
+  $('#x_icon').click (
+    function() {
+          $('#nav').hide();
+          $('#icon').show();
+          $('#x_icon').hide();
+        }
+      );
+    }
+  );
+</script>
+<style type="text/css">
+body {
+    margin: 0;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+wrapper {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+header {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(106,146,91,1.00);
+}
+section {
+    padding: 20px;
+    height: 500px;
+}
+footer {
+    padding: 20px;
+    font-size: 12px;
+}
+#nav {
+    display: none;
+	background-color: rgba(160,193,131,1.00);
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+	ul li{ padding: 20px;
+    
+    font-weight: bolder;
+    color: black;}
+#nav a {
+    text-decoration: none;
+}
+ul li:hover {
+    background-color: rgba(0,0,0,1.00);
+    color: rgba(255,255,255,1.00);
+}
+.logo, h1 {
+    display: inline;
+    vertical-align: middle;
+}
+#icon ,#x_icon{
+    display: block;
+}
+@media (min-width:1200px){
+wrapper {
+    max-width: 1200px;
+}
+.minor {
+    width: 49%;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#icon {
+    display: none;
+}
+#nav {
+    display: block;
+    
+}
+ul li {
+  display:inline-block;
+}
+}
+</style>
+</head>
+
+<body>
+<wrapper>
+<header><img src="" alt="" width="100" height="100" class="logo">
+    <h1>Sprout and Soil</h1>
+	  <img id="icon" src="images1/navigation_icon.gif" alt="Navigation icon. Click to expand navigation menu."/>
+<img id="x_icon" src="images1/x_icon.gif" alt="Exit out icon. Click to close navigation menu." style="display: none;" />  </header>
+  <nav id="nav">
+    <ul>
+      <a href="#work" id="work_link"><li>Our Work</li></a><a href="#about" id="about_link"><li>About Us</li></a><a href="#contact" id="contact_link"><li>Contact Us</li></a>
+    </ul>
+  </nav>
+  <section id="work">
+    <h2>Our Work
+    </h2>
+  </section>
+	
+  <section class="minor" id="about">
+    <h2>About Us
+    </h2>
+  </section>
+	
+  <section class="minor" id="contact">
+    <h2>Contact Us
+    </h2>
+  </section>
+  <footer>&copy; 2024, Melanie Hosein
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+</wrapper>
+</body>
+</html>
