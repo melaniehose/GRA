@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sprout &amp; Soil | Melanie Hosein 2024</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script type="text/javascript">
+  $(document).ready(
+    function() {
+      $('#icon').click (
+        function() {
+          $('#nav').show();
+          $('#icon').hide();
+          $('#x_icon').show();
+        }
+  );
+  $('#x_icon').click (
+    function() {
+          $('#nav').hide();
+          $('#icon').show();
+          $('#x_icon').hide();
+        }
+      );
+    }
+  );
+</script>
+<style type="text/css">
+body {
+    margin: 0;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+wrapper {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+header {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(106,146,91,1.00);
+}
+section {
+    padding: 20px;
+    /* [disabled]height: 500px; */
+    position: relative;
+}
+section img {
+    width: 100%;
+    height: auto;
+}
+#work .Our-Work-Text {
+    position: absolute;
+    left: 53px;
+    top: 123px;
+    width: 273px;
+    font-weight: normal;
+}
+footer {
+    padding: 20px;
+    font-size: 12px;
+    color: rgba(119,156,104,1.00);
+    margin-top: 21px;
+    margin-right: 21px;
+    margin-bottom: 21px;
+    margin-left: 21px;
+}
+#nav {
+    display: none;
+	background-color: rgba(160,193,131,1.00);
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+	ul li{ padding: 20px;
+    
+    font-weight: bolder;
+    color: black;}
+#nav a {
+    text-decoration: none;
+}
+ul li:hover {
+    background-color: rgba(0,0,0,1.00);
+    color: rgba(255,255,255,1.00);
+}
+.logo, h1 {
+    display: inline;
+    vertical-align: middle;
+}
+#icon ,#x_icon{
+    display: block;width:50px;
+}
+h1 {
+    color: rgba(255,255,255,1.00);
+}
+#work h3 {
+    position: fixed;
+}
+#about .About-Us-Text {
+    position: absolute;
+    left: 53px;
+    top: 112px;
+    width: 240px;
+    /* [disabled]line-height: 27px; */
+    font-weight: normal;
+}
+#contact .Contact-Us-Text {
+    position: absolute;
+    left: 53px;
+    top: 157px;
+    width: 216px;
+    /* [disabled]line-height: 27px; */
+    font-weight: normal;
+}
+@media (min-width:1200px){
+wrapper {
+    max-width: 1200px;
+}
+.minor {
+    width: 49%;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#icon {
+    display: none;
+}
+#nav {
+    display: block;
+    
+}
+ul li {
+  display:inline-block;
+}
+}
+</style>
+</head>
+
+<body>
+<wrapper>
+<header><img src="web logo.png" alt="" width="50" height="100" class="logo">
+    <h1>Sprout &amp; Soil</h1>
+	  <img id="icon" src="images3/menu.png" alt="Navigation icon. Click to expand navigation menu."/>
+<img id="x_icon" src="images3/x.png" alt="Exit out icon. Click to close navigation menu." style="display: none;" />  </header>
+  <nav id="nav">
+    <ul>
+      <a href="#work" id="work_link"><li>Our Work</li></a><a href="#about" id="about_link"><li>About Us</li></a><a href="#contact" id="contact_link"><li>Contact Us</li></a>
+    </ul>
+  </nav>
+  <section id="work">
+<h2>Our Work </h2>
+<img src="Our%20Work%202.jpg" alt="" width="800" height="533">
+	  <h3 class="Our-Work-Text">Create the perfect front yard and backyard landscapes with our gardening tips. We'll tell you about beautiful annual, perennial, bulb, and rose flowers, as well as trees, shrubs, and groundcovers that put on a year-round gardening show.</h3>
+</section>
+	
+  <section class="minor" id="about">
+<h2>About Us </h2>
+    <img src="About%20Us%202.jpg" alt="" width="800" height="533">
+    <h3 class="About-Us-Text">Sprout and Soil is a go-to resource for home garden ideas, houseplant care, landscape services and flower arrangements for everyday and special occasions, and garden know-how that can't be rivaled.</h3>
+</section>
+	
+  <section class="minor" id="contact">
+    <h2>Contact Us </h2>
+    <h3 class="Contact-Us-Text">If you would like to inquire about one of our services, email SproutnSoil@gmail.com or call 954-870-4456</h3>
+  <img src="Contact%20Us.jpg" alt="" width="800" height="533">  </section>
+  <footer>&copy; 2024, Melanie Hosein
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+</wrapper>
+</body>
+</html>
