@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<title>Drag and Drop Game | Melanie Hosein 2024</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+<style>
+	#div1{background-image:url("Benji_Blue.png")
+	
+	}
+
+#div1, #div2, #div3, #div4, #div5 {
+    float: left;
+    width: 700px;
+    height: 600px;
+    margin: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+    display: inline-block;
+}
+#div1 #drag1 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 90px;
+    padding-bottom: 279px;
+    padding-left: 160px;
+    padding-right: 310px;
+}
+#div2, #div3,#div4, #div5 {
+    height: 145px;
+    width: 145px;
+    background-image: url(Cat_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 0%;
+    padding-bottom: 0px;
+}
+#div2 img {
+    width: 100%;
+    height: 100%;
+}
+#div3 img {
+    width: 80%;
+    height: 50%;
+    padding-left: 17px;
+    padding-top: 40px;
+}
+#div4 img {
+    width: 80%;
+    height: 70%;
+    padding-top: 30px;
+    padding-left: 22px;
+}
+#div5 img {
+    width: 90%;
+    height: 60%;
+    padding-left: 5px;
+    padding-top: 30px;
+}
+wrapper {
+    width: 1130px;
+    margin: auto;
+    display: block;
+}
+#div1 #drag2 {
+    padding-top: 235px;
+    padding-left: 206px;
+    padding-bottom: 299px;
+    padding-right: 373px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#div1 #drag3 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 385px;
+    padding-left: 175px;
+    padding-bottom: 118px;
+    padding-right: 403px;
+}
+#div1 #drag4 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 390px;
+    padding-left: 155px;
+    padding-bottom: 128px;
+    padding-right: 421px;
+}
+footer {
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    padding-left: 17px;
+    padding-right: 0px;
+    display: block;
+    clear: both;
+}
+h1 {
+    margin-left: 25px;
+    text-align: left;
+    margin-bottom: 0px;
+    color: rgba(88,127,224,1.00);
+    font-size: 50px;
+}
+h2 {
+    margin-left: 25px;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: medium;
+    margin-top: 0px;
+    color: rgba(58,92,173,1.00);
+}
+body {
+    margin: 0;
+    font-family: "DynaPuff", system-ui;
+    background-color: aliceblue;
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+<wrapper>
+  <h1>Play with Benji the cat!</h1>
+  <h2> Drag and drop items to play with him</h2>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  
+  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img id="drag1" src="Lion-hat.png" draggable="true" ondragstart="drag(event)" width="700" height="600"></div>
+  
+  <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img id="drag2" src="Bow-tie.png" draggable="true" ondragstart="drag(event)" width="700" height="600"></div>
+  
+  <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img id="drag3" src="Yarn-ball.png" draggable="true" ondragstart="drag(event)" width="700" height="600"></div>
+  
+  <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img id="drag4" src="Food-bowl.png" draggable="true" ondragstart="drag(event)" width="700" height="600"></div>
+  <footer>&copy;2024, Melanie Hosein-Finol,
+    This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+</wrapper>
+</body>
+</html>
